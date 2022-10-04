@@ -15,11 +15,7 @@ def knapsack_dp(W, wt, val, n):
     return K[n][W]
 
 
-val = [60, 100, 120]
-wt = [10, 20, 30]
-W = 50
-n = len(val)
-print("Maximum possible profit =", knapsack_dp(W, wt, val, n))
+
 
 """
 OUTPUT:
