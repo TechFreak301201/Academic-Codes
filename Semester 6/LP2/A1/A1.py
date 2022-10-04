@@ -45,4 +45,26 @@ class Graph:
 
 # A1.png
 
+if __name__ == '__main__':
+    g = Graph()
 
+    g.addEdge('H', 'A')
+    g.addEdge('A', 'D')
+    g.addEdge('A', 'B')
+    g.addEdge('B', 'F')
+    g.addEdge('B', 'C')
+    g.addEdge('C', 'E')
+    g.addEdge('C', 'G')
+    g.addEdge('C', 'H')
+    g.addEdge('G', 'H')
+    g.addEdge('G', 'E')
+    g.addEdge('E', 'F')
+    g.addEdge('E', 'B')
+    g.addEdge('F', 'A')
+    g.addEdge('D', 'F')
+
+    print("Following is Depth First Traversal H -> E:")
+    g.DFS('H', 'E')
+
+    print ("\n\nFollowing is Breadth First Traversal H -> E:")
+    g.BFS('H', 'E')
