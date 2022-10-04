@@ -41,7 +41,19 @@ def merge_multiple(results, array_part_left, array_part_right):
     results.append(merge(array_part_left, array_part_right))
 
 
+def merge_sort(array):
+    """Perform merge sort."""
+    array_length = len(array)
 
+    if array_length <= 1:
+        return array
+
+    middle_index = array_length // 2
+    left = array[:middle_index]
+    right = array[middle_index:]
+    left = merge_sort(left)
+    right = merge_sort(right)
+    return merge(left, right)
 
 
 def merge(left, right):
