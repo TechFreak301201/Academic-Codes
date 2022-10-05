@@ -16,7 +16,17 @@ class NQBacktracking:
         self.x = x_
         self.y = y_
 
-   
+    def printSolution(self, board):
+        """A utility function to print solution"""
+        print(
+            "N Queen Backtracking Solution:\nGiven initial position of 1st queen at row:",
+            self.x,
+            "column:",
+            self.y,
+            "\n",
+        )
+        for line in board:
+            print(" ".join(map(str, line)))
 
     def solveNQUtil(self, board, col):
         """A recursive utility function to solve N
