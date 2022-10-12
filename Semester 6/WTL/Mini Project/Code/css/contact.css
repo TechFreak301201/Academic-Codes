@@ -7,6 +7,17 @@ body a {
 	-ms-transition: 0.5s all;
 }
 
+body{
+	margin: 5px;
+	padding: 5px;
+}
+
+h1{
+	font-family: sans-serif;
+	color: green;
+	font-size: 20px
+}
+
 /*--/contact--*/
 .contact_grid_right{
 	padding-top:4em;
